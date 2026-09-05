@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lociones Express Colombia: perfumeria arabe, de diseno, nicho y replicas 1.1.">
+  <title>Lociones Express Colombia | Tu firma olfativa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Menu lateral: categorias de compra siempre accesibles desde el encabezado. -->
+  <div class="menu-backdrop" data-menu-close></div>
+  <aside class="side-menu" id="side-menu" aria-label="Categorias de productos" aria-hidden="true">
+    <div class="side-menu-head"><span>Explora</span><button class="close-menu" type="button" data-menu-close aria-label="Cerrar menu">&times;</button></div>
+    <p class="side-menu-kicker">Lociones Express / 2026</p>
+    <nav class="category-nav">
+      <a href="#colecciones">Referencia Nueva <span>01</span></a><a href="#colecciones">Perfumes Hombre <span>02</span></a><a href="#colecciones">Perfumes Mujer <span>03</span></a><a href="#colecciones">Unisex <span>04</span></a><a href="#colecciones">Sets <span>05</span></a><a href="#colecciones">Sale / Ofertas <span>06</span></a>
+    </nav>
+    <div class="side-menu-footer"><span>Asesoria personalizada</span><a href="https://wa.me/573108944064">WhatsApp directo &rarr;</a></div>
+  </aside>
+
+  <!-- Encabezado: menu a la izquierda y marca como primer foco visual de la pagina. -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <button class="menu-toggle" type="button" aria-label="Abrir menu de categorias" aria-controls="side-menu" aria-expanded="false"><i></i><i></i><i></i></button>
+      <a class="brand-lockup" href="#inicio" aria-label="Lociones Express Colombia, inicio"><img src="Imagenes/logo_200x60_30kb%20(3).png" alt="Logo Lociones Express"><span><b>Lociones Express</b><strong>Colombia</strong></span></a>
+      <nav class="top-links" aria-label="Navegacion principal"><a href="#mas-pedidos">Mas pedidos</a><a href="#colecciones">Colecciones</a><a href="#contacto">Contacto</a></nav>
+      <a class="header-whatsapp" href="https://wa.me/573108944064" aria-label="Contactar por WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> <span>+57 310 894 4064</span></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero dinamico: cada slide combina perfume destacado, texto y notas visuales. -->
+    <section id="inicio" class="hero-slider" aria-label="Perfumes destacados">
+      <article class="hero-slide is-active" data-slide="0"><div class="hero-slide-bg" style="background-image: url('https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=2200&q=90');"></div><div class="hero-shade"></div><div class="container hero-slide-content"><p class="eyebrow">Destacado / 01</p><h1>Good Girl<br><em>Carolina Herrera</em></h1><p class="hero-description">Una silueta audaz, femenina y adictiva. La dualidad entre lo dulce y lo oscuro hecha perfume.</p><div class="scent-notes"><span class="note"><b>Vainilla</b><small>dulce</small></span><span class="note"><b>Jazmin</b><small>floral</small></span><span class="note"><b>Cacao</b><small>intenso</small></span></div><a class="button button-gold" href="#mas-pedidos">Descubrir perfume <span>&nearr;</span></a></div></article>
+      <article class="hero-slide" data-slide="1"><div class="hero-slide-bg hero-slide-bg--second" style="background-image: url('https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=2200&q=90');"></div><div class="hero-shade"></div><div class="container hero-slide-content"><p class="eyebrow">Destacado / 02</p><h1>Oud<br><em>Royal Edition</em></h1><p class="hero-description">Una estela oriental de maderas profundas y especias luminosas para noches que merecen ser recordadas.</p><div class="scent-notes"><span class="note"><b>Oud</b><small>amaderado</small></span><span class="note"><b>Azafran</b><small>especiado</small></span><span class="note"><b>Rosa</b><small>floral</small></span></div><a class="button button-gold" href="#colecciones">Explorar arabes <span>&nearr;</span></a></div></article>
+      <article class="hero-slide" data-slide="2"><div class="hero-slide-bg hero-slide-bg--third" style="background-image: url('https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=2200&q=90');"></div><div class="hero-shade"></div><div class="container hero-slide-content"><p class="eyebrow">Destacado / 03</p><h1>212 Men<br><em>Carolina Herrera</em></h1><p class="hero-description">Fresco, urbano y elegante. El clasico que acompana el ritmo de todos tus dias.</p><div class="scent-notes"><span class="note"><b>Bergamota</b><small>citrico</small></span><span class="note"><b>Madera</b><small>seco</small></span><span class="note"><b>Lavanda</b><small>aromatico</small></span></div><a class="button button-gold" href="#mas-pedidos">Ver seleccion <span>&nearr;</span></a></div></article>
+      <div class="container slider-controls"><button class="slider-arrow" type="button" data-prev aria-label="Perfume anterior">&larr;</button><div class="slider-dots"><button class="slider-dot is-active" type="button" data-go-to="0" aria-label="Ver perfume 1"></button><button class="slider-dot" type="button" data-go-to="1" aria-label="Ver perfume 2"></button><button class="slider-dot" type="button" data-go-to="2" aria-label="Ver perfume 3"></button></div><button class="slider-arrow" type="button" data-next aria-label="Siguiente perfume">&rarr;</button></div>
+    </section>
+
+    <!-- Productos mas pedidos: compra rapida con precio y enlace directo a WhatsApp. -->
+    <section id="mas-pedidos" class="section light-section"><div class="container"><div class="section-top"><div><p class="eyebrow dark">Lo que todos estan usando</p><h2>Mas pedidos <em>del mes</em></h2></div><a class="text-link" href="#colecciones">Ver todo el catalogo &rarr;</a></div><div class="bestseller-grid">
+      <article class="bestseller-card"><div class="best-image"><span class="rank">01</span><img src="Imagenes/testimonio_2_goodgirl.jpg" alt="Good Girl Carolina Herrera"><span class="best-tag">Bestseller</span></div><div class="best-info"><p>Carolina Herrera</p><h3>Good Girl</h3><strong>$240.000 <small>COP</small></strong><a href="https://wa.me/573108944064?text=Hola%2C%20quiero%20comprar%20Good%20Girl" class="buy-link">Comprar ahora &rarr;</a></div></article>
+      <article class="bestseller-card"><div class="best-image"><span class="rank">02</span><img src="Imagenes/producto3_800x800_menos150kb.webp" alt="Perfume arabe Oud Royale"><span class="best-tag">Favorito</span></div><div class="best-info"><p>Lattafa</p><h3>Oud Royale</h3><strong>$169.900 <small>COP</small></strong><a href="https://wa.me/573108944064?text=Hola%2C%20quiero%20comprar%20Oud%20Royale" class="buy-link">Comprar ahora &rarr;</a></div></article>
+      <article class="bestseller-card"><div class="best-image"><span class="rank">03</span><img src="Imagenes/testimonio_3_212men.jpg" alt="212 Men Carolina Herrera"><span class="best-tag">Clasico</span></div><div class="best-info"><p>Carolina Herrera</p><h3>212 Men</h3><strong>$210.000 <small>COP</small></strong><a href="https://wa.me/573108944064?text=Hola%2C%20quiero%20comprar%20212%20Men" class="buy-link">Comprar ahora &rarr;</a></div></article>
+      <article class="bestseller-card"><div class="best-image"><span class="rank">04</span><img src="Imagenes/producto6_800x800_menos150kb.webp" alt="Maison Santal perfume de nicho"><span class="best-tag">Nicho</span></div><div class="best-info"><p>Maison Santal</p><h3>Santal Extrait</h3><strong>$259.900 <small>COP</small></strong><a href="https://wa.me/573108944064?text=Hola%2C%20quiero%20comprar%20Santal%20Extrait" class="buy-link">Comprar ahora &rarr;</a></div></article>
+    </div></div></section>
+
+    <!-- Colecciones: carpetas tematicas que filtran el inventario de productos. -->
+    <section id="colecciones" class="section collection-section"><div class="container"><div class="section-top"><div><p class="eyebrow">Encuentra tu mundo</p><h2>Explora por <em>colecciones</em></h2></div><p class="section-note">Cada carpeta guarda una atmosfera, una familia de notas y una ocasion diferente.</p></div><div class="collection-tabs" role="tablist" aria-label="Colecciones"><button class="collection-tab is-active" type="button" role="tab" data-filter="todos">Todas</button><button class="collection-tab" type="button" role="tab" data-filter="arabes">Perfumes Arabes</button><button class="collection-tab" type="button" role="tab" data-filter="nicho">Perfumes Nicho</button><button class="collection-tab" type="button" role="tab" data-filter="disenador">De Disenador</button><button class="collection-tab" type="button" role="tab" data-filter="replica">Replica 1.1</button></div><div class="collection-grid">
+      <article class="collection-folder" data-category="arabes"><div class="folder-art"><img src="Imagenes/producto5_800x800_menos150kb.webp" alt="Coleccion de perfumes arabes"></div><div class="folder-content"><span>01 / Coleccion</span><h3>Perfumes Arabes</h3><p>Oud, ambar y especias de Oriente.</p><button class="folder-open" type="button" data-filter-target="arabes">Abrir carpeta &rarr;</button></div></article>
+      <article class="collection-folder" data-category="nicho"><div class="folder-art"><img src="Imagenes/producto6_800x800_menos150kb.webp" alt="Coleccion de perfumes nicho"></div><div class="folder-content"><span>02 / Coleccion</span><h3>Perfumes Nicho</h3><p>Composiciones para paladares exigentes.</p><button class="folder-open" type="button" data-filter-target="nicho">Abrir carpeta &rarr;</button></div></article>
+      <article class="collection-folder" data-category="disenador"><div class="folder-art"><img src="Imagenes/testimonio_2_goodgirl.jpg" alt="Coleccion de perfumes de disenador"></div><div class="folder-content"><span>03 / Coleccion</span><h3>Perfumes de Disenador</h3><p>Iconos globales, elegancia que perdura.</p><button class="folder-open" type="button" data-filter-target="disenador">Abrir carpeta &rarr;</button></div></article>
+      <article class="collection-folder" data-category="replica"><div class="folder-art"><img src="Imagenes/producto4_800x800_menos150kb.webp" alt="Coleccion de perfumes replica 1.1"></div><div class="folder-content"><span>04 / Coleccion</span><h3>Replica 1.1</h3><p>Tu aroma favorito, una alternativa inteligente.</p><button class="folder-open" type="button" data-filter-target="replica">Abrir carpeta &rarr;</button></div></article>
+    </div></div></section>
+
+    <!-- Detalle filtrable: informacion olfativa, precio y ocasion de cada referencia. -->
+    <section class="section product-detail-section" aria-live="polite"><div class="container"><div class="detail-header"><p class="eyebrow dark">Selecciones disponibles</p><h2>La carpeta <em id="active-collection">completa</em></h2></div><div class="detail-grid" id="detail-grid">
+      <article class="detail-card" data-detail-category="arabes"><div class="detail-photo"><img src="Imagenes/producto3_800x800_menos150kb.webp" alt="Oud Royale"></div><div class="detail-copy"><span class="detail-label">ARABE / EDP</span><h3>Oud Royale</h3><p><b>A que huele:</b> Amaderado oriental con oud, rosa y azafran.</p><p><b>Ocasiones:</b> Citas de noche, eventos formales.</p><strong>$169.900 <small>COP</small></strong><a class="button button-dark" href="https://wa.me/573108944064">Consultar disponibilidad &rarr;</a></div></article>
+      <article class="detail-card" data-detail-category="nicho"><div class="detail-photo"><img src="Imagenes/producto6_800x800_menos150kb.webp" alt="Maison Santal"></div><div class="detail-copy"><span class="detail-label">NICHO / EXTRAIT</span><h3>Maison Santal</h3><p><b>A que huele:</b> Santal cremoso, incienso y cedro seco.</p><p><b>Ocasiones:</b> Uso diario, espacios creativos.</p><strong>$259.900 <small>COP</small></strong><a class="button button-dark" href="https://wa.me/573108944064">Consultar disponibilidad &rarr;</a></div></article>
+      <article class="detail-card" data-detail-category="disenador"><div class="detail-photo"><img src="Imagenes/testimonio_2_goodgirl.jpg" alt="Good Girl"></div><div class="detail-copy"><span class="detail-label">DISENADOR / EDP</span><h3>Good Girl</h3><p><b>A que huele:</b> Vainilla, jazmin y cacao en una estela dulce.</p><p><b>Ocasiones:</b> Citas, celebraciones, noche.</p><strong>$240.000 <small>COP</small></strong><a class="button button-dark" href="https://wa.me/573108944064">Consultar disponibilidad &rarr;</a></div></article>
+      <article class="detail-card" data-detail-category="replica"><div class="detail-photo"><img src="Imagenes/producto4_800x800_menos150kb.webp" alt="Replica 1.1 Velvet Iris"></div><div class="detail-copy"><span class="detail-label">REPLICA 1.1 / EDP</span><h3>Velvet Iris</h3><p><b>A que huele:</b> Iris aterciopelado, vainilla y almizcle.</p><p><b>Ocasiones:</b> Oficina, clima templado, diario.</p><strong>$99.900 <small>COP</small></strong><a class="button button-dark" href="https://wa.me/573108944064">Consultar disponibilidad &rarr;</a></div></article>
+    </div></div></section>
+
+    <!-- Marcas populares: acceso rapido a los nombres mas buscados. -->
+    <section id="marcas" class="brand-strip section"><div class="container"><p class="eyebrow">Las firmas que nos eligen</p><div class="brand-grid"><a href="#colecciones">LATTAFA</a><a href="#colecciones">Giorgio Armani</a><a href="#colecciones">Carolina Herrera</a><a href="#colecciones">CREED</a><a href="#colecciones">JPG</a><a href="#colecciones">Jean Paul Gaultier</a></div></div></section>
+
+    <!-- Familias olfativas: modulos de descubrimiento por sensacion. -->
+    <section class="section family-section"><div class="container"><div class="section-top"><div><p class="eyebrow">Elige por sensacion</p><h2>Familias <em>olfativas</em></h2></div></div><div class="family-grid"><a href="#colecciones" class="family family-sweet"><span>Dulces</span><small>Vainilla / Caramelo</small></a><a href="#colecciones" class="family family-wood"><span>Amaderados</span><small>Santal / Cedro</small></a><a href="#colecciones" class="family family-citrus"><span>Citricos</span><small>Bergamota / Limon</small></a><a href="#colecciones" class="family family-floral"><span>Florales</span><small>Jazmin / Rosa</small></a><a href="#colecciones" class="family family-oriental"><span>Orientales</span><small>Oud / Incienso</small></a></div></div></section>
+
+    <!-- Testimonios: experiencias reales con calificacion visible. -->
+    <section class="section testimonials-section"><div class="container"><div class="section-top"><div><p class="eyebrow">Dicen de nosotros</p><h2>Historias que <em>inspiran</em></h2></div><div class="rating"><strong>4.9</strong><span>â˜…â˜…â˜…â˜…â˜…</span><small>+500 clientes felices</small></div></div><div class="testimonial-grid"><article class="testimonial"><img src="Imagenes/testimonio_1_yara.jpg" alt="Testimonio de Yara"><div><span class="stars">â˜…â˜…â˜…â˜…â˜…</span><blockquote>â€œEl Good Girl llego perfecto y el asesoramiento fue increible. Ya encontre mi perfume firma.â€</blockquote><cite>Yara M. <small>Compra verificada</small></cite></div></article><article class="testimonial"><img src="Imagenes/testimonio_2_goodgirl.jpg" alt="Testimonio de cliente Good Girl"><div><span class="stars">â˜…â˜…â˜…â˜…â˜…</span><blockquote>â€œMe ayudaron a elegir un arabe para mi esposo y supero todas mis expectativas. La estela es hermosa.â€</blockquote><cite>Laura V. <small>Compra verificada</small></cite></div></article><article class="testimonial"><img src="Imagenes/testimonio_3_212men.jpg" alt="Testimonio de cliente 212 Men"><div><span class="stars">â˜…â˜…â˜…â˜…â˜…</span><blockquote>â€œEnvio rapidisimo a Bogota y el perfume es original. Servicio de lujo de principio a fin.â€</blockquote><cite>Andres R. <small>Compra verificada</small></cite></div></article></div></div></section>
+
+    <!-- Asesoria: cierre editorial orientado a convertir la duda en recomendacion. -->
+    <section id="asesoria" class="advice-section"><div class="container advice-inner"><div><p class="eyebrow">No sabes cual elegir?</p><h2>Hablemos de <em>tu aroma.</em></h2><p>CuÃ©ntanos tu personalidad, tus notas favoritas y la ocasion. Te recomendamos una fragancia que hable por ti.</p><a class="button button-gold" href="https://wa.me/573108944064">Pedir recomendacion <span>&nearr;</span></a></div><div class="advice-mark">LEC<br><span>asesoria olfativa</span></div></div></section>
+  </main>
+
+  <!-- Footer: contacto constante y enlaces de confianza de la marca. -->
+  <footer id="contacto" class="site-footer"><div class="container footer-main"><div class="footer-logo"><span>Lociones Express</span><strong>Colombia</strong><p>Tu esencia, en movimiento.</p></div><div><p class="footer-title">Contacto</p><a href="https://wa.me/573108944064">WhatsApp: 310 894 4064</a><a href="https://www.instagram.com/locionexpress_cali/">Instagram: @Locionexpress_cali</a></div><div><p class="footer-title">La casa</p><a href="#marcas">Marcas</a><a href="#asesoria">Asesoria personalizada</a><a href="#colecciones">Politicas de autenticidad</a></div></div><div class="container footer-bottom"><span>Â© 2026 Lociones Express Colombia</span><span>Perfumeria original / Envio express nacional</span></div></footer>
+  <a class="whatsapp-float" href="https://wa.me/573108944064" aria-label="Escribir por WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i><b>Escribenos</b></a>
+  <script>
+    // Menu lateral accesible en desktop y movil.
+    const menuToggle = document.querySelector('.menu-toggle');
+    const sideMenu = document.querySelector('.side-menu');
+    const menuBackdrop = document.querySelector('.menu-backdrop');
+    const closeMenu = () => { sideMenu.classList.remove('is-open'); menuBackdrop.classList.remove('is-visible'); menuToggle.setAttribute('aria-expanded', 'false'); sideMenu.setAttribute('aria-hidden', 'true'); };
+    menuToggle.addEventListener('click', () => { const open = sideMenu.classList.toggle('is-open'); menuBackdrop.classList.toggle('is-visible', open); menuToggle.setAttribute('aria-expanded', open); sideMenu.setAttribute('aria-hidden', !open); });
+    document.querySelectorAll('[data-menu-close], .category-nav a').forEach((item) => item.addEventListener('click', closeMenu));
+
+    // Carrusel automatico con controles manuales y pausa al pasar el cursor.
+    const slides = [...document.querySelectorAll('.hero-slide')];
+    const dots = [...document.querySelectorAll('.slider-dot')];
+    let currentSlide = 0;
+    let sliderTimer;
+    const showSlide = (index) => { currentSlide = (index + slides.length) % slides.length; slides.forEach((slide, i) => slide.classList.toggle('is-active', i === currentSlide)); dots.forEach((dot, i) => dot.classList.toggle('is-active', i === currentSlide)); };
+    const startSlider = () => { clearInterval(sliderTimer); sliderTimer = setInterval(() => showSlide(currentSlide + 1), 6500); };
+    document.querySelector('[data-next]').addEventListener('click', () => { showSlide(currentSlide + 1); startSlider(); });
+    document.querySelector('[data-prev]').addEventListener('click', () => { showSlide(currentSlide - 1); startSlider(); });
+    dots.forEach((dot) => dot.addEventListener('click', () => { showSlide(Number(dot.dataset.goTo)); startSlider(); }));
+    document.querySelector('.hero-slider').addEventListener('mouseenter', () => clearInterval(sliderTimer));
+    document.querySelector('.hero-slider').addEventListener('mouseleave', startSlider);
+    startSlider();
+
+    // Filtros de coleccion sincronizados con las carpetas y el detalle de productos.
+    const tabs = [...document.querySelectorAll('.collection-tab')];
+    const folders = [...document.querySelectorAll('.collection-folder')];
+    const details = [...document.querySelectorAll('.detail-card')];
+    const activeCollection = document.querySelector('#active-collection');
+    const filterCollection = (filter) => { tabs.forEach((tab) => tab.classList.toggle('is-active', tab.dataset.filter === filter)); folders.forEach((folder) => folder.classList.toggle('is-hidden', filter !== 'todos' && folder.dataset.category !== filter)); details.forEach((detail) => detail.classList.toggle('is-hidden', filter !== 'todos' && detail.dataset.detailCategory !== filter)); activeCollection.textContent = filter === 'todos' ? 'completa' : filter; };
+    tabs.forEach((tab) => tab.addEventListener('click', () => filterCollection(tab.dataset.filter)));
+    document.querySelectorAll('[data-filter-target]').forEach((button) => button.addEventListener('click', () => { filterCollection(button.dataset.filterTarget); document.querySelector('.product-detail-section').scrollIntoView({ behavior: 'smooth' }); }));
+  </script>
+</body>
+</html>
+
