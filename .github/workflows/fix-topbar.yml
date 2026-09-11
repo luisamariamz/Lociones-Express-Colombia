@@ -1,0 +1,36 @@
+name: Fix top service bar
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  fix:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Fix top bar CSS position
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('styles.css')
+          s = p.read_text(encoding='utf-8')
+          old = ".top-links{position:absolute;top:-41px;"
+          new = ".top-links{position:absolute;top:0;"
+          s = s.replace(old, new)
+          s = s.replace("@media(max-width:760px){.top-links{top:-41px;", "@media(max-width:760px){.top-links{top:0;")
+          s = s.replace(".top-language{position:absolute;right:0;top:-41px;", ".top-language{position:absolute;right:0;top:0;")
+          p.write_text(s, encoding='utf-8')
+          PY
+      - name: Commit fix
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add styles.css
+          git diff --cached --quiet || git commit -m "Fix top service bar position"
+          git push
