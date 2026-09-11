@@ -15,7 +15,7 @@
 
 /* Barra superior inspirada en la referencia: gris claro, tipografia limpia y enlaces reales. */
 .site-header:before{background:#f1f2f3;height:41px}
-.top-links{position:absolute;top:-41px;left:0;right:0;width:100%;height:41px;display:grid;grid-template-columns:minmax(250px,1fr) minmax(360px,1.3fr) minmax(430px,1.7fr) auto;align-items:center;gap:20px;padding:0 0;order:initial;z-index:2}
+.top-links{position:absolute;top:0;left:0;right:0;width:100%;height:41px;display:grid;grid-template-columns:minmax(250px,1fr) minmax(360px,1.3fr) minmax(430px,1.7fr) auto;align-items:center;gap:20px;padding:0 0;order:initial;z-index:2}
 .top-links:before{display:none}
 .top-links:after{display:none}
 .top-links a,.top-links .top-shipping,.top-links .top-language{display:flex;align-items:center;color:#36454b;font-size:14px;line-height:1;white-space:nowrap}
@@ -29,4 +29,4 @@
 .top-language{justify-content:flex-end;gap:7px;padding-left:12px;font-size:14px!important}
 .top-language span{font-size:16px;margin-top:-3px}
 @media(max-width:1050px){.top-links{grid-template-columns:minmax(210px,1fr) minmax(260px,1.1fr) minmax(300px,1.5fr) auto;gap:10px}.top-links a,.top-links .top-shipping,.top-links .top-language{font-size:11px}.top-shipping{font-size:11px!important}.top-whatsapp span{font-size:11px}.top-instagram i,.top-whatsapp i{font-size:15px}}
-@media(max-width:760px){.top-links{top:-41px;grid-template-columns:1fr 1fr;height:41px;gap:8px;padding:0 2px}.top-shipping{display:none!important}.top-instagram,.top-whatsapp{font-size:10px!important}.top-instagram span,.top-whatsapp span{font-size:10px}.top-language{position:absolute;right:0;top:-41px;height:41px;background:#f1f2f3;padding:0 7px;font-size:11px!important}.top-whatsapp{padding-right:55px}.header-inner{padding-top:41px}}
+@media(max-width:760px){.top-links{top:0;grid-template-columns:1fr 1fr;height:41px;gap:8px;padding:0 2px}.top-shipping{display:none!important}.top-instagram,.top-whatsapp{font-size:10px!important}.top-instagram span,.top-whatsapp span{font-size:10px}.top-language{position:absolute;right:0;top:0;height:41px;background:#f1f2f3;padding:0 7px;font-size:11px!important}.top-whatsapp{padding-right:55px}.header-inner{padding-top:41px}}
