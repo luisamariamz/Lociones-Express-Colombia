@@ -1,0 +1,40 @@
+name: Install exact uploaded logo
+on:
+  push:
+    branches: [main]
+permissions:
+  contents: write
+jobs:
+  install:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build exact logo SVG
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import base64
+          chunks = []
+          for p in sorted(Path('.').glob('.logo_exact_chunk_*'), key=lambda x: int(x.name.rsplit('_', 1)[1])):
+              chunks.append(p.read_text(encoding='utf-8').strip())
+          data = ''.join(chunks)
+          base64.b64decode(data, validate=True)
+          svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 211 196" width="211" height="196" preserveAspectRatio="xMidYMid meet">
+          <image href="data:image/png;base64,{data}" x="0" y="0" width="211" height="196" preserveAspectRatio="none"/>
+          </svg>
+          '''
+          Path('logo_original.svg').write_text(svg, encoding='utf-8')
+          for p in Path('.').glob('.logo_exact_chunk_*'):
+              p.unlink()
+          PY
+      - name: Commit exact logo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logo_original.svg
+          git rm -f .logo_exact_chunk_* 2>/dev/null || true
+          git add -u
+          git diff --cached --quiet || git commit -m "Use exact uploaded Lociones Express logo"
+          git push
